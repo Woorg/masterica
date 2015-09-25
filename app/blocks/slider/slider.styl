@@ -1,0 +1,212 @@
+@css {
+
+	/**
+	* bxSlider v4.2.5
+	* Copyright 2013-2015 Steven Wanderski
+	* Written while drinking Belgian ales and listening to jazz
+
+	* Licensed under MIT (http://opensource.org/licenses/MIT)
+	*/
+
+	/** VARIABLES 
+	===================================*/
+	/** RESET AND LAYOUT
+	===================================*/
+	.bx-wrapper {
+	position: relative;
+	padding: 0;
+	*zoom: 1;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	}
+	.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+	}
+	.bxslider {
+	margin: 0;
+	padding: 0;
+	}
+	ul.bxslider {
+	list-style: none;
+	}
+	.bx-viewport {
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	}
+	/** THEME
+	===================================*/
+	.bx-wrapper {
+	}
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+	}
+	/* LOADER */
+	.bx-wrapper .bx-loading {
+	}
+	/* PAGER */
+	.bx-wrapper .bx-pager {
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a {
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active,
+	.bx-wrapper .bx-pager.bx-default-pager a:focus {
+	}
+	.bx-wrapper .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	*zoom: 1;
+	*display: inline;
+	}
+	.bx-wrapper .bx-pager-item {
+	}
+	/* DIRECTION CONTROLS (NEXT / PREV) */
+	.bx-wrapper .bx-prev {
+	}
+	.bx-wrapper .bx-prev:hover,
+	.bx-wrapper .bx-prev:focus {
+	}
+	.bx-wrapper .bx-next {
+	}
+	.bx-wrapper .bx-next:hover,
+	.bx-wrapper .bx-next:focus {
+	}
+	.bx-wrapper .bx-controls-direction a {
+	
+	}
+	.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+	}
+	/* AUTO CONTROLS (START / STOP) */
+	.bx-wrapper .bx-controls-auto {
+	}
+	.bx-wrapper .bx-controls-auto .bx-start {
+	}
+	.bx-wrapper .bx-controls-auto .bx-start:hover,
+	.bx-wrapper .bx-controls-auto .bx-start.active,
+	.bx-wrapper .bx-controls-auto .bx-start:focus {
+	}
+	.bx-wrapper .bx-controls-auto .bx-stop {
+	}
+	.bx-wrapper .bx-controls-auto .bx-stop:hover,
+	.bx-wrapper .bx-controls-auto .bx-stop.active,
+	.bx-wrapper .bx-controls-auto .bx-stop:focus {
+	}
+	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	}
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	}
+	
+
+
+
+
+}
+
+
+.slider
+	position relative
+	margin-left 70px
+	width 850px
+	height 460px
+	&__ul
+		position relative
+		width 850px
+		height 460px
+		overflow hidden
+		clearfix()
+	&__li
+		position relative
+		padding-bottom 376px
+		width 850px
+		height 460px
+		float left
+		clearfix()
+	&__img
+		border 3px solid $color-white
+		size 316px 418px
+		background $color-blue 
+		border-radius 5px
+		img
+			margin 3px			
+			display block
+			width 304px 
+			height 406px
+		&--1
+			float left
+		&--2
+			float right
+	&__desc
+		position absolute
+		top 0
+		left 316px
+		padding-top 100px
+		width 216px 
+	&__title
+		margin-bottom 83px
+		position relative 
+		font-reg(24px,1)
+		color $color-white 
+		&:after
+			position absolute
+			top 17px + 24
+			left 50%
+			margin-left -22px
+			content ""
+			sprite($needle-icon)
+	&__text
+		font-it(14px,16px)
+		color $color-white 
+	&__pag
+		position absolute
+		bottom 10px
+		left 50%
+		margin-left -65px
+		padding 0 0 0 15px
+		sprite($slider-pagination)
+		font-size 0
+		&__li
+			display inline-block
+			width 25px
+			height 100%
+		&__a
+			position relative
+			height 100%
+			display block
+			&:after
+				position absolute
+				left 0
+				bottom -9px
+				content ""
+				margin-left -1px
+				display none
+				width 0
+				height 0
+				border-style solid
+				border-width 0 4px 6px 4px
+				border-color transparent transparent #ffe433 transparent
+			&.active
+				&:after
+					display block
+.slider
+	.bx-controls
+		position absolute
+		top 0
+		left 0
+		right 0
+		z-index 0
+		a
+			position absolute
+			top 168px
+			width 57px
+			height 57px
+			&.bx-prev
+				left -74px
+				sprite($slider-control-left)
+				text-indent -9999px
+			&.bx-next
+				right -79px
+				sprite($slider-control-right)
+				text-indent -9999px
+				

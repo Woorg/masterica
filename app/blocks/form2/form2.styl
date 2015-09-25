@@ -1,0 +1,90 @@
+.form2
+	margin-bottom 24px
+	&__in
+		margin auto
+		width 853px
+	&__title
+		position relative
+		margin-bottom -64px
+		sprite($big-title)
+		font-reg(24px,56px)
+		color $color-black
+		text-align center
+		text-transform uppercase
+		z-index 1
+	&__entry
+		margin 0 61px 
+		padding-bottom 6px
+		background-image linear-gradient(to top, #ffe851 0%, #faf7e1 100%)
+		border-radius 0 0 22px 22px
+	&__wrap
+		position relative
+		margin 0 7px 0
+		padding-left 30px
+		padding-right 23px 
+		border 1px dashed $color-black
+		border-width 0 1px 1px 
+		border-radius 0 0 20px 20px
+		min-height 191px 
+		clearfix()
+		&:after
+			position absolute
+			bottom -10px
+			left 50%
+			margin-left -12px
+			content ""
+			sprite($scissors) 
+	&__desc
+		margin-bottom 15px
+		padding-top 87px
+		clearfix()
+	&__subtitle
+		float left
+		font-med(24px,1)
+		color $color-blue
+		text-transform uppercase
+		letter-spacing tracking(22)
+	&__text
+		margin-right 6px
+		padding 2px 0 0
+		float right
+		font-reg(16px,1)
+		color $color-black
+		
+.form2
+	.form
+		&__row
+			font-size 0
+		&__input,
+		&__submit
+			border none
+			margin-left 16px
+			margin-bottom 0
+			display inline-block
+			vertical-align top
+		&__input
+			input
+				border none
+				padding 9px 28px
+				width 217px
+				color $color-black 
+				&::-webkit-input-placeholder
+					color $color-black
+				&::-moz-placeholder
+					color $color-black
+				&:-moz-placeholder
+					color $color-black
+				&:-ms-input-placeholder
+					color $color-black
+			&:first-child
+				margin-left 0
+		&__submit
+			margin-left 8px
+			input
+				padding 8px 0
+				width 203px
+				font-size 18px
+			&:hover,
+			&:active
+				input
+					background $color-button-a 

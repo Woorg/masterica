@@ -1,0 +1,70 @@
+.features
+	position relative
+	&:before
+		position absolute
+		top -25px
+		left 0
+		width 100%
+		height 25px
+		content ""
+		background url(../images/feature-top.png) 0 0 repeat-x
+	&__in
+		margin auto
+		padding-top 33px
+		padding-bottom 10px + 25px
+		width 1000px
+		text-align center
+	&__title
+		margin-bottom 47px
+		@extend .title
+		&:after
+			right -89px 
+			sprite($title-right2)
+		&:before
+			left -98px
+			sprite($title-left2)
+	&__ul
+		clearfix()
+	&__i
+		margin-left 74px
+		width 174px
+		min-height 254px
+		display inline-block
+		vertical-align top
+		&:first-child
+			margin-left 0
+	&__i--1
+		.features__icon
+			sprite($feature-1)
+		.features__text
+			margin-left -6px
+	&__i--2
+		margin-left 73px
+		.features__icon
+			sprite($feature-2)
+		.features__text
+			margin-left -9px
+	&__i--3
+		.features__icon
+			sprite($feature-3)
+		.features__text
+			margin-left 10px
+	&__i--4
+		.features__icon
+			sprite($feature-4)
+	&__i--5
+		margin-left 0
+		.features__icon
+			sprite($feature-5)
+		.features__text
+			margin 0 -15px
+	&__i--6
+		margin-left 83px
+		.features__icon
+			sprite($feature-6)
+	&__icon
+		margin auto
+	&__text
+		font-reg(18px,18px)
+		color $color-black
+	

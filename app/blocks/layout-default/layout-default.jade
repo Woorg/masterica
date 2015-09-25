@@ -1,0 +1,12 @@
+- var pageScripts = pageScripts || [[], [], []];
+
+include ../scripts/scripts
+
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	body
+		block content
+			
+		+scripts()

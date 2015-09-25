@@ -1,0 +1,36 @@
+include ../blocks/header/header
+include ../blocks/hero/hero
+include ../blocks/works/works
+include ../blocks/price/price
+include ../blocks/form2/form2
+include ../blocks/companies/companies
+include ../blocks/letters/letters
+include ../blocks/features/features
+include ../blocks/video/video
+include ../blocks/form3/form3
+include ../blocks/bonus/bonus
+include ../blocks/map/map
+include ../blocks/icon/icon
+include ../blocks/footer/footer
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Мастерица главная страница';
+	- var pageDescription = 'desc';
+	- var pageKeywords = '';
+	+script(['app.min.js'] , ['//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU'])
+
+block content
+	+header
+	+hero
+	+works
+	+price
+	+form2
+	+companies
+	+letters
+	+features
+	+video
+	+form3
+	+bonus
+	+map
+	+footer

@@ -1,0 +1,128 @@
+.header
+	position relative
+	padding-top 17px
+	min-height 148px
+	background #FFF
+	&__in
+		position relative
+		margin auto
+		width 1000px
+		clearfix()
+	&:after
+		content ""
+		position absolute
+		bottom -14px
+		left 0
+		width 100%
+		height 14px
+		background transparent url(../images/header-bg.png) 0 100% repeat-x 
+
+.nav
+	margin-bottom 30px
+	&__ul
+		font-size 0
+		clearfix()
+	&__li
+		position relative
+		margin-left 24px
+		margin-bottom 10px
+		padding-left 70px
+		display inline-block
+		font-reg(16px,18px)
+		&--1
+			margin-left 5px
+		&--2
+			margin-left 27px
+		&--3
+			margin-left 27px
+		&--4
+			margin-left 335px
+			padding-left 58px
+		&--5
+			margin-left 27px
+		&:before
+			content ""
+			position absolute
+			top 4px
+			left 0
+			sprite($menu-sep)
+		&:first-child
+			margin-left 5px
+			padding 0
+			&:before
+				display none
+		&:nth-child(4n)
+			margin-left 335px
+		
+	&__a
+		text-transform uppercase
+		text-decoration none
+		color $color-topnav
+		text-decoration none
+		&:hover
+			text-decoration underline
+		
+.logo
+	position absolute
+	top -17px
+	left 50%
+	margin-left -(205 / 2) px
+	sprite($logo)
+	z-index 1
+	
+.social
+	position absolute
+	top -3px
+	right 304px
+	font-size 0
+	&__li
+		margin-left 9px
+		display inline-block
+		&:first-child
+			margin-left 0
+	&__a
+		svg
+			fill $color-yellow
+		&--style-1
+			svg
+				width 27px
+				height 27px
+		&--style-2
+			svg
+				width 27px
+				height 27px
+		&--style-3
+			svg
+				width 27px
+				height 27px
+.time
+	margin-left -5px
+	font-reg(24px,1)
+	&--top
+		float left
+		text-align left
+	&__val
+		margin-bottom 2px
+	&__text
+		font-it(14px,16px)
+		color $color-blue2 
+
+.phone
+	margin-right 9px
+	font-reg(24px,1)
+	&--top
+		float right
+		text-align right
+	&__val
+		margin-bottom 1px
+.email
+	font-reg(14px,16px)
+	&--header
+		margin-right -7px
+	&__a
+		color $color-blue2
+		text-decoration underline
+		&:hover
+			text-decoration none
+	
+

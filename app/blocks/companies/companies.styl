@@ -1,0 +1,51 @@
+.companies
+	background $color-gray
+	&__in
+		margin auto
+		padding-top 22px
+		padding-bottom 57px
+		width 860px
+		text-align center
+	&__title
+		margin-bottom 37px 
+		@extend .title
+		&:after
+			right -58px
+			sprite($title-right2)
+		&:before
+			left -65px
+			sprite($title-left2)
+	&__list
+		font-size 0
+		clearfix()
+	&__i
+		margin-bottom 20px
+		display inline-block
+		vertical-align top
+		for n in (1..7)
+			&--{n}
+				text-indent -9999px
+		&--1
+			margin-left -8px
+			sprite($logo-1)
+		&--2
+			margin-top 5px
+			margin-left 54px
+			sprite($logo-2)
+		&--3
+			margin-left 39px
+			sprite($logo-3)
+		&--4
+			margin-top 5px
+			margin-left 36px
+			sprite($logo-4)
+		&--5
+			margin-top 10px
+			sprite($logo-5)
+		&--6
+			margin-left 99px
+			sprite($logo-6)
+		&--7
+			margin-top 37px
+			margin-left 100px
+			sprite($logo-7)

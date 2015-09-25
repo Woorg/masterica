@@ -1,0 +1,67 @@
+.price
+	margin-bottom 28px
+	position relative
+	background $color-white url(../images/price-bg_left.jpg) 0 0 no-repeat
+	&:before
+		position absolute
+		top -26px
+		left 0
+		content ""
+		width 100%
+		height 26px
+		background transparent url(../images/price-top.png) 0 0 repeat-x 
+	&__wrap
+		background transparent url(../images/price-bg_right.jpg) 100% 0 no-repeat 
+	&__in
+		margin auto
+		width 1018px
+		text-align center
+	&__title
+		margin-top 52px
+		margin-bottom 45px
+		@extend .title
+		&:after
+			right -86px
+			sprite($title-right2)
+		&:before
+			left -94px
+			sprite($title-left2)
+	&__row
+		margin-right 12px
+		padding-top 12px
+		padding-bottom 11px
+		min-height 70px
+		clearfix()
+		&:nth-child(even)
+			background $color-gray
+		&:nth-child(odd)	
+			background $color-white
+	&__i
+		padding 0 0 0 18px
+		float left
+		width 509px
+		text-align left
+		clearfix()
+		&:last-child
+			padding 0 12px 0 30px
+			width 496px 
+	&__text
+		padding 6px 0
+		display inline-block
+		font-reg(20px,36px)
+		color $color-black
+		text-transform lowercase
+	&__val
+		padding 14px 0 10px
+		display block
+		width 145px
+		float right
+		background $color-blue
+		font-thin(24px,1)
+		color $color-white 
+		text-align center
+		border-radius 5px
+		
+ 	
+
+		 

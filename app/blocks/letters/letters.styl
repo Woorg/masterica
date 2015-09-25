@@ -1,0 +1,30 @@
+.letters
+	position relative
+	background $color-yellow 
+	&:before
+		position absolute
+		top -25px
+		left 0
+		width 100%
+		height 25px
+		background $color-yellow url(../images/feedback-mail-top.png) 0 0 repeat-x
+		content ""
+	&__in
+		margin auto
+		padding-top 44px
+		padding-bottom 60px + 25px
+		width 1200px
+		text-align center
+	&__title
+		margin-bottom 52px
+		@extend .title
+		&:after,
+		&:before
+			top 14px
+		&:after
+			right -61px 
+			sprite($title-right)
+		&:before
+			left -70px
+			sprite($title-left)
+		

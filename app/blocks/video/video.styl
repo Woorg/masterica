@@ -1,0 +1,55 @@
+.video
+	position relative
+	background $color-gray 
+	&:before
+		position absolute
+		top -25px
+		width 100%
+		height 25px
+		background url(../images/video-top.png) repeat-x
+		content ""
+	&__in
+		margin auto
+		padding-top 5px
+		padding-bottom 19px
+		width 1015px
+		text-align center
+		overflow hidden
+	&__title
+		position relative
+		padding-bottom 27px
+		@extend .title
+		&__icon
+			position absolute
+			bottom -7px
+			left 50%
+			margin-left  -14px
+			display block
+			sprite($video-icon)
+	&__ul
+		margin-left -16px
+		font-size 0
+		text-align left
+		overflow hidden
+	&__i
+		margin-left 16px
+		margin-bottom 10px
+		display inline-block
+		width 492px
+		min-height 278px 
+		vertical-align top
+		text-align center
+	&__caption
+		padding-top ((36px - 17px) / 2) 
+		padding-bottom ((36px - 17px) / 2)
+		min-height 36px
+		font-reg(16px,1.2)
+		color $color-videotext
+		&__a
+			text-decoration underline
+			color $color-videolink
+			&:hover
+				text-decoration none
+	&__obj
+		width 492px
+		height 278px 

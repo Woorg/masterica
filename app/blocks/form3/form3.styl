@@ -1,0 +1,66 @@
+.form3
+	margin 0 auto
+	padding-bottom 29px
+	background $color-gray 
+	&__entry
+		margin 0 auto
+		padding 5px 8px 5px 5px
+		width 730px
+		background-image linear-gradient(to top, #ffe851 0%, #faf7e1 100%)
+		border-radius 25px
+	&__wrap
+		position relative
+		min-height 128px 
+		position relative
+		padding-left 30px
+		padding-right 23px 
+		border 1px dashed $color-black
+		border-radius 20px
+		&:after
+			position absolute
+			bottom -10px
+			left 50%
+			margin-left -12px
+			content ""
+			sprite($scissors) 
+	&__desc
+		margin-top 23px
+		margin-bottom 15px
+		clearfix()
+	.form
+		&__row
+			font-size 0
+		&__input,
+		&__submit
+			border none
+			margin-left 16px
+			margin-bottom 0 
+			display inline-block
+			vertical-align top
+		&__input
+			input
+				border none
+				padding 9px 20px
+				width 217px
+				color $color-black 
+				&::-webkit-input-placeholder
+					color $color-black
+				&::-moz-placeholder
+					color $color-black
+				&:-moz-placeholder
+					color $color-black
+				&:-ms-input-placeholder
+					color $color-black
+			&:first-child
+				margin-left 0
+		&__submit
+			margin-left 9px
+			input
+				padding 8px 0
+				width 203px
+				font-size 18px
+			&:hover,
+			&:active
+				input
+					background $color-button-a 
+	

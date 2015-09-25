@@ -1,0 +1,89 @@
+.bonus
+	background url(../images/steps-bg.jpg) 50% 0 no-repeat
+	background-size cover  
+	&__in
+		margin auto
+		padding-top 23px
+		width 1000px
+		text-align center
+	&__title
+		margin-bottom 84px
+		position relative
+		font-med(30px,36px)
+		color $color-white 
+		text-transform uppercase
+		&:after
+			position absolute
+			top 45px
+			left 50%
+			margin-left -21px
+			content ""
+			sprite($bonus-icon)
+	&__steps
+		font-size 0
+		clearfix()
+	&__step
+		position relative
+		width 33.3%
+		min-height 227px
+		display inline-block
+		vertical-align top
+		&:after
+			content ""
+			position absolute
+		&--style-1
+			.bonus__icon
+				margin-left 60px
+				sprite($bonus-step-1)
+			.bonus__text
+				margin 0 85px 0 33px 
+			&:after
+				top 53px
+				right -43px
+				sprite($bonus-step-arrow-1)
+		&--style-2
+			.bonus__icon
+				sprite($bonus-step-2)
+			.bonus__text
+				margin 0 100px
+			&:after
+				top 65px
+				right -82px
+				sprite($bonus-step-arrow-2)
+		&--style-3
+			.bonus__icon
+				margin-left 128px
+				sprite($bonus-step-3)
+			.bonus__text
+				margin 0 0px 0 85px 
+			&:after
+				top 112px 
+				left 20px
+				sprite($bonus-step-arrow-3)
+		&--style-4
+			.bonus__icon
+				margin-left 70px
+				margin-bottom 16px
+				sprite($bonus-step-4)
+			.bonus__text
+				margin 0 61px 0 36px
+		&--style-5
+			.bonus__icon
+				margin-left 114px
+				margin-bottom 16px
+				sprite($bonus-step-5)
+			.bonus__text
+				margin 0 0 0 76px
+			&:after
+				top 55px 
+				left -40px
+				sprite($bonus-step-arrow-4)
+				
+	&__icon
+		margin auto
+		margin-bottom 27px
+		
+	&__text
+		font-reg(16px,18px)
+		color $color-white 
+		

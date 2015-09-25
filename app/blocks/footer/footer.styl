@@ -1,0 +1,45 @@
+.footer
+	background $color-black 
+	&__in
+		position relative
+		margin auto
+		padding 34px 0 40px
+		width 1000px
+		min-height 127px
+	&__logo
+		position absolute
+		top 13px
+		left -5px
+		sprite($logo-small)
+	&__nav
+		margin-right 242px 
+		margin-left 164px
+		margin-bottom 11px
+	&__ul
+		font-size 0
+		clearfix()
+	&__i
+		margin-right 44px
+		margin-bottom 10px
+		display inline-block
+		&:last-child
+			margin-left 0
+	&__a
+		font-reg(14px,16px)
+		color $color-white
+		text-transform uppercase
+		text-decoration none
+		&:hover
+			text-decoration underline
+	&__contacts
+		position absolute
+		top 32px
+		right 0
+		.phone__val
+			margin-bottom 14px
+			color $color-white
+	&__copyright
+		margin-left 166px
+		font-reg(14px,16px)
+		color $color-white
+	

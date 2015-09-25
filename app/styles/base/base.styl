@@ -1,0 +1,32 @@
+body
+	background $color-white
+	
+
+
+
+.title
+	position relative
+	display inline-block
+	font-med(30px,36px)
+	text-transform uppercase
+	&:after,
+	&:before
+		position absolute
+		top 13px
+		content ""
+	&:after
+		right -70px
+		sprite($title-right2)
+	&:before
+		left -78px
+		sprite($title-left2)
+		
+
+::-webkit-input-placeholder
+	color $color-black
+::-moz-placeholder
+	color $color-black
+:-moz-placeholder
+	color $color-black
+:-ms-input-placeholder
+	color $color-black

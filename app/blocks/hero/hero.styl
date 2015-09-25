@@ -1,0 +1,99 @@
+.hero
+	background url(../images/hero-bg.png) 0 0 repeat-x 
+	&__wrap
+		background transparent url(../images/hero.jpg) 50% 0 no-repeat 
+	&__in
+		position relative
+		margin auto
+		width 1000px
+		min-height 486px
+	&__title
+		margin-bottom 19px
+		margin-left -6px
+		padding-top 75px
+		font-extr(30px,36px)
+		text-transform uppercase
+		color $color-blue 
+	&__text
+		margin-left -18px
+		width 422px
+		text-align center
+		font-it(20px,24px)
+	
+.form
+	padding 1px
+	width 399px 
+	border 5px solid #f8f2b3
+	border-radius 10px
+	background white
+	&--hero
+		position absolute
+		top 101px
+		right 0 
+	&__wrap
+		padding-top 27px
+		height 100%
+		background $color-gray
+		border-radius 5px
+		text-align center
+	&__title
+		position relative
+		margin-bottom 7px
+		padding 0 70px 
+		font-med(24px,1)
+		color $color-blue
+		letter-spacing tracking(20)  
+		text-transform uppercase
+		&:after,
+		&:before
+			position absolute
+			top 7px
+			content ""
+		&:after
+			right 18px
+			sprite($title-right)
+		&:before
+			left 13px
+			sprite($title-left)
+	&__text
+		margin-bottom 27px
+		margin-left -19px
+		font-reg(16px,1)
+		color $color-black 
+	&__input
+		margin-bottom 18px
+		input
+			padding 7px 15px 
+			width 232px
+			background-color $color-white
+			border 1px solid #c8c7c7
+			border-radius 5px
+			font-reg(13px,16px)
+			color $color-darkgray
+			&::-webkit-input-placeholder
+				color $color-darkgray
+			&::-moz-placeholder
+				color $color-darkgray
+			&:-moz-placeholder
+				color $color-darkgray
+			&:-ms-input-placeholder
+				color $color-darkgray
+	&__submit
+		input
+			border none
+			padding 14px 30px 10px 27px
+			background-color #2765af
+			border-radius 5px
+			font-thin(24px,1)
+			color $color-white
+			white-space initial
+			transition background-color .3s ease
+		&:hover
+			input
+				background $color-button-a 
+	&__note
+		margin-left 10px
+		padding-top 24px
+		padding-bottom 21px
+		font-reg(14px,16px)
+		color $color-black
