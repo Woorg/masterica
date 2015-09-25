@@ -3,10 +3,8 @@ import runSequence from 'run-sequence';
 import ghpages     from 'gulp-gh-pages';
 
 gulp.task('deploy', () => (
-	runSequence(
 		() => gulp.src('dist/**/*')
 			.pipe(ghpages({branch: 'gh-pages', remoteUrl: 'https://github.com/Woorg/masterica.git'}))
-	)
 ));
 
 
