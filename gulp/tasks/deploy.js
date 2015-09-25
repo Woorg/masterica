@@ -4,9 +4,9 @@ import ghpages     from 'gulp-gh-pages';
 
 gulp.task('deploy', () => (
 	runSequence(
-		'del',
-		'build',
 		() => gulp.src('dist/**/*')
 			.pipe(ghpages({branch: 'gh-pages', remoteUrl: 'https://github.com/Woorg/masterica.git'}))
 	)
 ));
+
+
