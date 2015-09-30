@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 .bonus
 	background url(../images/steps-bg.jpg) 50% 0 no-repeat
 	background-size cover  
+=======
+
+.bonus
+	background url(../images/steps-bg.jpg) 50% 0 no-repeat
+	background-size cover
+>>>>>>> add responsive
 	&__in
 		margin auto
 		padding-top 23px
@@ -9,6 +16,10 @@
 	&__title
 		margin-bottom 84px
 		position relative
+<<<<<<< HEAD
+=======
+		display inline-block
+>>>>>>> add responsive
 		font-med(30px,36px)
 		color $color-white 
 		text-transform uppercase
@@ -86,6 +97,70 @@
 	&__text
 		font-reg(16px,18px)
 		color $color-white 
+<<<<<<< HEAD
 		
 
 		
+=======
+
++from-width(0)
+	.bonus
+		&__in
+			width auto
+		&__title
+			&:after
+				top 85px
+		&__step
+			margin-bottom 10px
+			width auto
+			display block
+			&:after
+				display none
+			for num in 1..5
+				&--style-{num}
+					.bonus__icon
+						margin 0 auto 10px
+					.bonus__text
+						margin auto
+						
+
+
++from-width(1017px)
+	.bonus
+		&__in
+			width 1000px
+		&__title
+			&:after
+				top 45px
+		&__step
+			margin-bottom 0
+			width 33.3%
+			display inline-block
+			&:after
+				display block
+			&--style-1
+				.bonus__icon
+					margin-left 60px
+				.bonus__text
+					margin 0 85px 0 33px 
+			&--style-2
+				.bonus__text
+					margin 0 100px
+			&--style-3
+				.bonus__icon
+					margin-left 128px
+				.bonus__text
+					margin 0 0px 0 85px 
+			&--style-4
+				.bonus__icon
+					margin-left 70px
+					margin-bottom 16px
+				.bonus__text
+					margin 0 61px 0 36px
+			&--style-5
+				.bonus__icon
+					margin-left 114px
+					margin-bottom 16px
+				.bonus__text
+					margin 0 0 0 76px
+>>>>>>> add responsive

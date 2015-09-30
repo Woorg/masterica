@@ -1,6 +1,7 @@
 .map
 	position relative
 	overflow hidden
+<<<<<<< HEAD
 	&__obj
 		width 100% 
 		height 521px
@@ -11,6 +12,18 @@
 		margin-left -600px
 		padding-top 68px
 		width 1200px
+=======
+	min-height 540px
+	&__obj
+		width 100% 
+		min-height 540px
+	&__in
+		position absolute
+		top 0
+		left 0
+		right 0
+		padding-top 68px
+>>>>>>> add responsive
 		text-align center
 	&__ul
 		margin-bottom 57px
@@ -58,5 +71,38 @@
 			text-decoration none
 
 			
+<<<<<<< HEAD
 		
 		
+=======
++from-width(0)
+	.map
+		&__in
+			left 0
+			margin-left 0
+			width auto
+		&__ul
+			display none
+		&__i
+			margin-left 0
+			margin-bottom 10px
+		&__shop
+			width 240px
+			
+			
++from-width(600px)
+	.map
+		&__ul
+			display inline-block
+		&__shop
+			width 399px
+			
+			
++from-width(1017px)
+	.map
+		&__ul
+			display inline-block
+		&__shop
+			width 399px
+
+>>>>>>> add responsive

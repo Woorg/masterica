@@ -104,7 +104,10 @@
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> add responsive
 .slider
 	position relative
 	margin-left 70px
@@ -209,4 +212,77 @@
 				right -79px
 				sprite($slider-control-right)
 				text-indent -9999px
+<<<<<<< HEAD
 				
+=======
+				
++from-width(0)
+	.slider
+		margin 0
+		padding 0 10px
+		width 100%
+		height 700px
+		&__ul
+			height 700px
+		&__li
+			padding-bottom 0
+			height 700px
+		&__desc
+			margin-bottom 15px
+		&__img
+			margin auto
+			max-width 316px 
+			width auto
+			height auto
+			float none
+			img
+				margin 3px auto
+				max-width 100%
+				width auto
+				height auto
+			&--2
+				display none
+		&__desc
+			position static
+			left 0
+			padding-top 30px
+			width auto
+	.bx-controls
+		display none
+		
++from-width(1017px)
+	.slider
+		margin-left 70px
+		padding 0
+		width 850px
+		height 460px
+		&__ul
+			height 460px
+		&__li
+			padding-bottom 0
+			height 460px
+		&__desc
+			margin-bottom 0
+			position absolute
+			top 0
+			left 316px
+			padding-top 100px
+			width 216px 
+		&__img
+			border 3px solid $color-white
+			size 316px 418px
+			background $color-blue 
+			border-radius 5px
+			img
+				margin 3px			
+				display block
+				width 304px 
+				height 406px
+			&--1
+				float left
+			&--2
+				float right
+				display block
+	.bx-controls
+		display block
+>>>>>>> add responsive

@@ -18,7 +18,11 @@ $(function() {
 
 	var $carousel = $('.carousel__ul');
 
+<<<<<<< HEAD
 	$('.carousel__ul').bxSlider({
+=======
+	$carousel.bxSlider({
+>>>>>>> add responsive
 		mode: 'horizontal',
 		speed: 100,
 		useCSS: true,

@@ -21,8 +21,13 @@ gulp.task('styles', () => (
 		.pipe(plumber({errorHandler: errorHandler}))
 		.pipe(stylus({
 			errors: true,
+<<<<<<< HEAD
 			url: { name: 'datauri', limit : false},
 			use: rupture(),
+=======
+			use: rupture(),
+			url: { name: 'datauri'},
+>>>>>>> add responsive
 			sourcemap: gutil.env.debug ? {
 				comment: false,
 				inline: true
