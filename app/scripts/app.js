@@ -20,16 +20,22 @@ $(function() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc6e3c0eda11faab3411cc4ac1075fe21a57c262
 	$carousel.bxSlider({
 =======
 	$('.carousel__ul').bxSlider({
 >>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
+<<<<<<< HEAD
 =======
 	$('.carousel__ul').bxSlider({
 =======
 	$carousel.bxSlider({
 >>>>>>> add responsive
 >>>>>>> parent of 16382e2... update
+=======
+>>>>>>> bc6e3c0eda11faab3411cc4ac1075fe21a57c262
 		mode: 'horizontal',
 		speed: 100,
 		useCSS: true,

@@ -54,6 +54,7 @@
     "gulp-csscomb": "^3.0.3",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "gulp-deploy-ftp": "0.0.2",
 =======
 >>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
@@ -62,6 +63,11 @@
     "gulp-deploy-ftp": "0.0.2",
 >>>>>>> add responsive
 >>>>>>> parent of 16382e2... update
+=======
+    "gulp-deploy-ftp": "0.0.2",
+=======
+>>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
+>>>>>>> bc6e3c0eda11faab3411cc4ac1075fe21a57c262
     "gulp-eslint": "^1.0.0",
     "gulp-filter": "^2.0.2",
     "gulp-gh-pages": "^0.4.0",
