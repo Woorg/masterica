@@ -22,12 +22,21 @@ gulp.task('styles', () => (
 		.pipe(stylus({
 			errors: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			use: rupture(),
 			url: { name: 'datauri'},
 =======
 			url: { name: 'datauri', limit : false},
 			use: rupture(),
 >>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
+=======
+			url: { name: 'datauri', limit : false},
+			use: rupture(),
+=======
+			use: rupture(),
+			url: { name: 'datauri'},
+>>>>>>> add responsive
+>>>>>>> parent of 16382e2... update
 			sourcemap: gutil.env.debug ? {
 				comment: false,
 				inline: true

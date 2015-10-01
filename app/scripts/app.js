@@ -19,10 +19,17 @@ $(function() {
 	var $carousel = $('.carousel__ul');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$carousel.bxSlider({
 =======
 	$('.carousel__ul').bxSlider({
 >>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
+=======
+	$('.carousel__ul').bxSlider({
+=======
+	$carousel.bxSlider({
+>>>>>>> add responsive
+>>>>>>> parent of 16382e2... update
 		mode: 'horizontal',
 		speed: 100,
 		useCSS: true,
