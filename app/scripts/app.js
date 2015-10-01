@@ -18,7 +18,11 @@ $(function() {
 
 	var $carousel = $('.carousel__ul');
 
+<<<<<<< HEAD
 	$carousel.bxSlider({
+=======
+	$('.carousel__ul').bxSlider({
+>>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
 		mode: 'horizontal',
 		speed: 100,
 		useCSS: true,

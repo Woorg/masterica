@@ -21,8 +21,13 @@ gulp.task('styles', () => (
 		.pipe(plumber({errorHandler: errorHandler}))
 		.pipe(stylus({
 			errors: true,
+<<<<<<< HEAD
 			use: rupture(),
 			url: { name: 'datauri'},
+=======
+			url: { name: 'datauri', limit : false},
+			use: rupture(),
+>>>>>>> 41cba2e0dc9e584a78492875e4aca83878474bfc
 			sourcemap: gutil.env.debug ? {
 				comment: false,
 				inline: true
