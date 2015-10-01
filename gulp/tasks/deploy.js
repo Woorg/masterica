@@ -1,15 +1,5 @@
 import gulp        from 'gulp';
 import runSequence from 'run-sequence';
-<<<<<<< HEAD
-import ghpages     from 'gulp-gh-pages';
-
-gulp.task('deploy', () => (
-	runSequence(
-		'del',
-		'build',
-		() => gulp.src('dist/**/*').pipe(ghpages())
-	)
-=======
 import ftp         from 'gulp-deploy-ftp';
 
 gulp.task('deploy', () => (
@@ -20,5 +10,4 @@ gulp.task('deploy', () => (
 			uploadPath: 'public_html/masterica'
 
 		}))
->>>>>>> add responsive
 ));
