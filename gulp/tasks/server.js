@@ -17,6 +17,7 @@ gulp.task('server', () => (
 			directory: false,
 			middleware: !!gutil.env.debug ? [debuga()] : []
 		},
-		tunnel: !!gutil.env.tunnel
+		online: true,
+		tunnel: true
 	})
 ));

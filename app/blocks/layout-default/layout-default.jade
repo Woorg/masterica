@@ -4,7 +4,12 @@ include ../scripts/scripts
 
 
 doctype html
-html(lang='ru')
+| <!--[if lt IE 8]><html class="ie7" lang="ru"><![endif]-->
+| <!--[if IE 8]><html class="ie8" lang="ru" ><![endif]-->
+| <!--[if IE 9]><html class="ie9" lang="ru" ><![endif]-->
+| <!--[if gt IE 9]><!-->
+html(lang="ru")
+	| <!--<![endif]-->
 	include ../head/head
 	body
 		block content

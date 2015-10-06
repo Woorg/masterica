@@ -15,7 +15,8 @@ gulp.task('default', () => (
 			'stylesDependences',
 			'templates',
 			'scripts',
-			'lint'
+			'lint',
+			'deploy'
 		],
 		'server',
 		'watch'
